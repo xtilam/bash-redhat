@@ -1,8 +1,12 @@
 schemaVersion: 2.1.0
 metadata:
-  name: bashC
+  name: bash
 components:
   - name: tools
     container:
-      image: ztilam60/nodejs_php:v0
-      memoryLimit: 3Gi
+      image: quay.io/devfile/universal-developer-image:ubi8-0e189d9
+      memoryLimit: 4Gi
+    attributes:
+      che-theia.eclipse.org/vscode-extensions:
+        - 'https://open-vsx.org/api/dracula-theme/theme-dracula/2.24.2/file/dracula-theme.theme-dracula-2.24.2.vsix'
+        - 'https://open-vsx.org/api/redwan-hossain/auto-rename-tag-clone/0.1.8/file/redwan-hossain.auto-rename-tag-clone-0.1.8.vsix'
